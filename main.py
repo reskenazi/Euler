@@ -1,0 +1,1 @@
+print("Euler 1")
