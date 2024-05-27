@@ -4,6 +4,7 @@ import euler3
 import euler4
 import euler5
 import euler6
+import euler7
 
 print("Pick problem number: ")
 problem = input()
@@ -19,3 +20,5 @@ elif problem == "5":
   euler5.run()
 elif problem == "6":
   euler6.run()
+elif problem == "7":
+  euler7.run()
