@@ -8,6 +8,7 @@ import euler7
 import euler8
 import euler9
 import euler10
+import euler11
 
 print("Pick problem number: ")
 problem = input()
@@ -31,3 +32,5 @@ elif problem == "9":
   euler9.run()
 elif problem == "10":
   euler10.run()
+elif problem == "11":
+  euler11.run()
