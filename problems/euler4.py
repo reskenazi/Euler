@@ -1,6 +1,9 @@
 import math
 
 def run():
+  print(solve())
+
+def solve():
   largest = 0
   for i in range(999, 99, -1):
     for j in range(999, 99, -1):
@@ -8,7 +11,7 @@ def run():
         break
       if(isPalindrome(i * j)):
         largest =  i * j
-  print(largest)
+  return largest
   
 def isPalindrome(n):
   digits = int(math.log(n,10))

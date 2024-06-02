@@ -1,8 +1,11 @@
 from utilities import *
 
 def run():
+  print(solve(2000000))
+
+def solve(n):
   sum = 0
-  for i in range(10):
+  for i in range(n):
     if(isPrime(i)):
       sum += i
-  print(sum-1)
+  return sum-1

@@ -1,6 +1,10 @@
+from importlib import resources as impresources
+from . import inputs
+
 def run():
   arr = []
-  with open("euler11text.txt", "r") as f:   
+  inp_file = impresources.files(inputs) / 'euler11.txt'
+  with inp_file.open("rt") as f:  
     for x in f:
       arr.append(list(map(int, x.split())))
   largest = 0 

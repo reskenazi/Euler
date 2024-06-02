@@ -2,5 +2,9 @@ import importlib
 
 print("Pick problem number: ")
 input = input()
-problem = importlib.import_module("eulerpackage.euler" + str(input))
-problem.run()
+
+try:
+  problem = importlib.import_module("problems.euler" + str(input))
+  problem.run()
+except ModuleNotFoundError:
+  print("Problem number " + str(input) + " does not exist")
