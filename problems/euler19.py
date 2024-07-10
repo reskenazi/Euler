@@ -19,7 +19,6 @@ def run():
       date = date + 1
       
     dayOfWeek = (dayOfWeek + 1) % 7
-    print(year, month, date, dayOfWeek)
     
     
   print(sum)
