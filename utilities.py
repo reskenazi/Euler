@@ -85,3 +85,18 @@ def addArrays(arr1, arr2):
 
   elif(difference < 0):
     return addArrays(arr2, arr1)
+
+def convertIntToArray(num):
+  result = []
+  while num != 0:
+    result.insert(0, num % 10)
+    num = num // 10
+  return result
+
+def sumOfLetters(str):
+  alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  sum = 0
+  for x in range(len(str)):
+    sum = sum + alphabet.index(str[x:x+1]) + 1
+
+  return sum
